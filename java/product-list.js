@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", getData);
 
 const endpoint =
-  "https://tripoli.dk/Cph-cartel-backend/wp-json/wp/v2/product?_embed";
+  "https://tripoli.dk/Cph-cartel-backend/wp-json/wp/v2/product?_embed&per_page=6";
 
 function getData() {
   fetch(endpoint)
@@ -18,9 +18,11 @@ function showbikini(bikini) {
   const template = document.querySelector("template").content;
   const copy = template.cloneNode(true);
 
-  copy.querySelector("a").href += bikini.id;
+  // copy.querySelector("a").href += bikini.id;
   copy.querySelector("h2").textContent = bikini.title.rendered;
-  copy.querySelector("h3").textContent = bikini.description_;
+  copy.querySelector("p").textContent = bikini.description_;
+  copy.querySelector(".price").textContent = bikini.price;
+
   copy.querySelector("img").src =
     bikini._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
 
@@ -34,5 +36,5 @@ function showbikini(bikini) {
     ulEl.appendChild(liEl);
   });
 
-  document.querySelector("main").appendChild(copy);
+  document.querySelector(".third-container-trending").appendChild(copy);
 }

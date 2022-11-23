@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/product-list.css" />
+    <link rel="stylesheet" href="/CSS/product-list.css" />
+
     <title>Categories</title>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <div class="logo-img"></div>
+        <a href="../index.html">
+        <div class="logo-img">
+          <img
+            src="/images/CC_logo_round_DeepBlue@4x.png"
+            width="112px;"
+            height="auto"
+            alt="logo image"
+          />
+        </div>
+      </a>
         <div class="box-rose"></div>
         <nav>
-          <a href="#">Shopxx</a>
+          <a href="/Pages/product-list.html">Shop</a>
           <a href="#">About us</a>
           <a href="#">Blog</a>
           <a href="#">Contact us</a>
@@ -40,23 +50,34 @@
           </ul>
         </div>
       </div>
-      <div class="product-display-container">
-        <main></main>
-
-        <template>
-          <article class="bikini">
-            <a href="singlebikini.html?id=">
-              <img src="" alt="" />
+        <div class="third-container-trending">
+          <template>
+            <article class="bikini">
+              <a href="/Pages/singlebikini.html">
+                <img src="" alt="" />
+              </a>
               <h2></h2>
-              <h3></h3>
+              <p></p>
               <ul></ul>
+              <div class="color-box">
+                <div class="colors-right-1"></div>
+                <div class="colors-right-2"></div>
+                <div class="colors-right-3"></div>
+                <div class="colors-right-4"></div>
+                <div class="colors-right-5"></div>
+              </div>
+              <div class="prix">
+                <p class="price"></p>
+              </div>
               <p class="price"></p>
-            </a>
-            <button>Add</button>
-          </article>
-        </template>
+              <div class="yellow-btn">
+                <a href="/Pages/singlebikini.html">+</a>
+              </div>
+            </article>
+          </template>
+        </div>
       </div>
     </div>
-    <script src="/java/script.js"></script>
+    <script src="/java/product-list.js"></script>
   </body>
 </html>
