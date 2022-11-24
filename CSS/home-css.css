@@ -114,7 +114,7 @@ nav > a:hover {
   height: 403px;
   left: 0px;
   top: 0px;
-  background: url(/images/img-2.png);
+  background: url(../images/Group\ 3.png);
   border-radius: 0px 70px 70px 0px;
 }
 .right-101 {
@@ -413,7 +413,7 @@ nav > a:hover {
   width: 322px;
   height: 353.7px;
 
-  background: url(/images/Gym-set.png);
+  background: url(../images/Gym-set.png);
   background-repeat: no-repeat;
   border-radius: 70px 0px 0px 0px;
 }
@@ -434,7 +434,7 @@ nav > a:hover {
 .img-2 {
   width: 322px;
   height: 353.7px;
-  background: url(/images/Swimming\ suit.png);
+  background: url(../images/Swimming\ suit.png);
   background-repeat: no-repeat;
   border-radius: 70px 0px 0px 0px;
 }
