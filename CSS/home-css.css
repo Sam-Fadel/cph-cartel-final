@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Medium.otf")
+      format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +17,14 @@
 /* Header*/
 body {
   position: relative;
+  font-family: "Satoshi-Medium";
 }
 .header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 2em;
 }
 
 nav {
@@ -24,6 +37,12 @@ nav {
 }
 nav > a {
   text-decoration: none;
+  color: #000000;
+  font-family: "Satoshi-Medium";
+}
+nav > a:hover {
+  text-decoration: none;
+  color: #fc6d3a;
 }
 .main-container {
   max-width: 1400px;
@@ -79,9 +98,6 @@ nav > a {
 
   /* 32pt-H2-satoshi-bold */
 
-  font-family: "Satoshi";
-  font-style: normal;
-
   font-size: 20px;
   line-height: 25px;
   /* or 117% */
@@ -125,39 +141,97 @@ nav > a {
   margin-right: 30px;
 }
 .line-dotted {
-  width: 206px;
+  width: 12em;
   height: 0px;
   left: 134px;
   top: 239px;
   border: 1px dashed #000000;
   transform: rotate(90deg);
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   margin-left: 30px;
 }
-.text-turtles > p {
-  width: 143px;
-  height: 76px;
-  left: 356px;
-  top: 734px;
-  margin-left: 80px;
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 38px;
-  /* or 171% */
-
+.text-turtles {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+}
+.box-img-turtles-buble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.box-img-turtles-buble > p {
   text-align: end;
-  letter-spacing: -0.05em;
-
-  color: #000000;
-
+  margin-left: 5em;
+  font-size: larger;
+  font-weight: 600;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.turtles-buble {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bubles {
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 0.5em;
+  margin-left: 1em;
+}
+.turtles-buble > img {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+.bubles-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background: #d7e4f2;
+  border-radius: 50%;
+}
+.bubles-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  background: #d7e4f2;
+  border-radius: 50%;
+}
+.bubles-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  background: #d7e4f2;
+  border-radius: 50%;
+}
+.bubles-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #d7e4f2;
+  border-radius: 50%;
+}
 /*end left container */
 
 /*start righ conatiner 101*/
@@ -192,7 +266,6 @@ nav > a {
   left: 716px;
   top: 329px;
 
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 200;
   font-size: 50px;
@@ -228,7 +301,6 @@ nav > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
 }
 .btn-shop-now > a {
   text-decoration: none;
@@ -352,7 +424,7 @@ nav > a {
   justify-content: center;
   align-items: baseline;
   margin-top: 20px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   font-family: "Satoshi";
   font-style: normal;
   font-size: 22px;
@@ -362,7 +434,7 @@ nav > a {
 .img-2 {
   width: 322px;
   height: 353.7px;
-  background: url(../images/Swimming\ suit.png.png);
+  background: url(/images/Swimming\ suit.png);
   background-repeat: no-repeat;
   border-radius: 70px 0px 0px 0px;
 }
@@ -491,31 +563,31 @@ img {
   flex-direction: column;
   row-gap: 20px;
   margin-bottom: 150px;
+  width: 100%;
 }
 .our-mission-title > h1 {
   text-align: center;
   margin-bottom: 25px;
 }
 .img-text-mission {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20em;
   align-items: center;
 }
 .img-box-left {
-  width: 434px;
-  height: 391px;
-  left: 0px;
-  top: 0px;
-
-  background: url(../images/turtle-mission.png);
-  border-radius: 0px 70px 70px 0px;
+  width: 100%;
+  height: auto;
+}
+.img-box-left > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 3em 3em 0px;
 }
 .text-right-mission {
   display: grid;
   grid-column: -1;
-  width: 600px;
-  margin-right: 100px;
+  width: 100%;
 }
 .text-right-mission > p {
   font-family: "Roboto";
@@ -525,16 +597,13 @@ img {
   line-height: 1.7em;
 }
 .testimonials-container {
-  width: 1300px;
-  height: 692px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-
-  margin-bottom: 200px;
 }
 .testimonials-title > h2 {
   text-align: center;
-  margin-bottom: 100px;
 }
 .reviews {
   display: grid;
@@ -744,6 +813,66 @@ img {
   letter-spacing: -0.05em;
 
   color: #ffffff;
+}
+footer {
+  background: rgba(215, 228, 242, 0.2);
+}
+.footer-main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.first-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  line-height: 2em;
+  width: 100%;
+}
+.same-flex {
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 5em;
+}
+.footer-image-2 {
+  display: flex;
+
+  align-items: end;
+}
+.footer-image-2 > img {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  height: auto;
+}
+.second-container {
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  column-gap: 5em;
+}
+.icons-facebook {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5em;
+}
+.border > a {
+  text-decoration: none;
+  color: #000000;
+}
+.border > a:hover {
+  text-decoration: none;
+  color: #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.logo-bottom {
+  width: 200px;
+  height: auto;
 }
 
 @media screen and (min-width: 700px) {
